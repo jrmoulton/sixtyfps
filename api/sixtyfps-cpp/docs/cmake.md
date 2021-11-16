@@ -13,7 +13,7 @@ These binaries can be found by clicking on the last
 [successful build of the master branch](https://github.com/sixtyfpsui/sixtyfps/actions?query=workflow%3ACI+is%3Asuccess+branch%3Amaster)
 and downloading the `cpp_bin` artifact.
 
-After extracting the artifact you can place the `lib` directory into your `CMAKE_PREFIX_PATH` and `find_package(SixtyFPS)` should succeed
+After extracting the artifact you can place the `lib/cmake` directory into your `CMAKE_PREFIX_PATH` and `find_package(SixtyFPS)` should succeed
 in locating the package.
 
 In the next section you will learn how to use the installed library in your application
