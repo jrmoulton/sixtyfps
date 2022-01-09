@@ -49,7 +49,7 @@ impl Item for NativeScrollView {
             QStyleOptionFrame frameOption;
             frameOption.rect = QRect(QPoint(), QSize(1000, 1000));
             frameOption.frameShape = QFrame::StyledPanel;
-            frameOption.lineWidth = 1;
+            frameOption.lineWidth = 0;
             frameOption.midLineWidth = 0;
             QRect cr = qApp->style()->subElementRect(QStyle::SE_ShapedFrameContents, &frameOption, nullptr);
             return {
