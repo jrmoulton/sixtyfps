@@ -28,8 +28,9 @@
 "@" @keyword
 
 [
-"import" 
+"import"
 "from"
+"export"
 ] @include
 
 [
@@ -81,10 +82,18 @@
  "yellow"
  ] @constant.builtin
 
-
+[
+ (comparison_operator)
+ (mult_prec_operator)
+ (add_prec_operator)
+ (unary_prec_operator)
+ (assignment_prec_operator)
+ ] @keyword.operator
 ; Punctuation
 [
 ","
+":"
+";"
 "."
 ] @punctuation.delimiter
 
@@ -114,4 +123,3 @@
 "physical_length"
 "string"
 ] @type.builtin
-
