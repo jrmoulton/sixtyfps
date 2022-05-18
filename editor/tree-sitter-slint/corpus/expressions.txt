@@ -147,14 +147,96 @@ Example := Text {
             (string_fragment)))))))
 
 ================================================================================
-Color expression
+Color expression 3 char
 ================================================================================
 
 Example := Window {
-    property<color> c1: #ffaaff;
+    property<color> c1: #f33;
 }
 
 --------------------------------------------------------------------------------
+
+(source_file
+      (component_definition
+        (user_type_identifier)
+        (user_type_identifier)
+        (field_declaration_list
+          (field_declaration_list_body
+            (property_definition
+              (user_type_identifier)
+              (var_identifier)
+              (property_expr
+                (value
+                  (color))))))))
+
+================================================================================
+Color expression 4 char
+================================================================================
+
+Example := Window {
+    property<color> c1: #f330;
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+      (component_definition
+        (user_type_identifier)
+        (user_type_identifier)
+        (field_declaration_list
+          (field_declaration_list_body
+            (property_definition
+              (user_type_identifier)
+              (var_identifier)
+              (property_expr
+                (value
+                  (color))))))))
+
+================================================================================
+Color expression 6 char
+================================================================================
+
+Example := Window {
+    property<color> c1: #f33444;
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+      (component_definition
+        (user_type_identifier)
+        (user_type_identifier)
+        (field_declaration_list
+          (field_declaration_list_body
+            (property_definition
+              (user_type_identifier)
+              (var_identifier)
+              (property_expr
+                (value
+                  (color))))))))
+
+================================================================================
+Color expression 8 char
+================================================================================
+
+Example := Window {
+    property<color> c1: #ffffff88;
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+      (component_definition
+        (user_type_identifier)
+        (user_type_identifier)
+        (field_declaration_list
+          (field_declaration_list_body
+            (property_definition
+              (user_type_identifier)
+              (var_identifier)
+              (property_expr
+                (value
+                  (color))))))))
 
 ================================================================================
 Brush expression
@@ -166,6 +248,19 @@ Example := Window {
 
 --------------------------------------------------------------------------------
 
+(source_file
+      (component_definition
+        (user_type_identifier)
+        (user_type_identifier)
+        (field_declaration_list
+          (field_declaration_list_body
+            (property_definition
+              (builtin_type_identifier)
+              (var_identifier)
+              (property_expr
+                (var_identifier
+                  (post_identifier))))))))
+
 ================================================================================
 Function expression
 ================================================================================
@@ -175,6 +270,25 @@ Example := Window {
 }
 
 --------------------------------------------------------------------------------
+
+(source_file
+      (component_definition
+        (user_type_identifier)
+        (user_type_identifier)
+        (field_declaration_list
+          (field_declaration_list_body
+            (property_definition
+              (builtin_type_identifier)
+              (var_identifier)
+              (property_expr
+                (function_call
+                  (function_identifier)
+                  (call_signature
+                    (formal_parameters
+                      (formal_parameter
+                        (value
+                          (number
+                            (int_number)))))))))))))
 
 ================================================================================
 Image expression
